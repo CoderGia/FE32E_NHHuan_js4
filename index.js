@@ -93,7 +93,7 @@ document.getElementById('duDoan').onclick = function () {
     var canh2 = Number(document.getElementById('canh2').value);
     var canh3 = Number(document.getElementById('canh3').value);
     //output dự đoán kết quả tam giác vuông, cân, đều và thường
-    var duDoan = ''
+    var duDoan = '';
     //process 
     if (canh1 === canh2 || canh1 === canh3 || canh2 === canh3) {
         duDoan = "Đây là tam giác cân";
