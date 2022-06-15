@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <section class="bai1 mt-5">
+            <h3>Bài tập 1: Xuất 3 số theo thứ tự tăng dần</h3>
+            <p class="">Nhập vào 3 số nguyên</p>
+            <div class="form-group row mt-3">
+                <div class="col-4">
+                    <input class="form-control" id="soThu1" placeholder="Số thứ nhất">
+                </div>
+
+                <div class="col-4">
+                    <input class="form-control" id="soThu2" placeholder="Số thứ hai">
+                </div>
+
+                <div class="col-4">
+                    <input class="form-control" id="soThu3" placeholder="Số thứ ba">
+                </div>
+            </div>
+            <div class="form-group mt-2">
+                <button id="sapXep" class="btn btn-primary">Sắp xếp</button>
+            </div>
+            <div class="alert alert-primary mt-2" id="ketQua"></div>
+        </section>
+        <hr>
+        <section class="bai2 mt5">
+            <h3>Bài tập 2: Chương trình chào hỏi</h3>
+            <div class="form-group row mt-3">
+                <div class="col-4">
+                    <select class="form-control" name="" id="thanhVienGiaDinh">
+                        <option value="">Bạn là thành viên nào trong gia đình ?</option>
+                        <option value="B">Bố</option>
+                        <option value="M">Mẹ</option>
+                        <option value="A">Anh trai</option>
+                        <option value="E">Em gái</option>
+                    </select>
+                </div>
+
+                <div class="col-4">
+                    <button id="xinChao" class="btn btn-success">Gửi lời chào</button>
+                </div>
+            </div>
+            <div class="alert alert-success mt-2" id="chao"></div>
+        </section>
+        <hr>
+        <section class="bai3 mt-5">
+            <h3>Bài tập 3: Cho 3 số nguyên. Viết chương trình xuất ra có bao nhiêu số lẻ và bao nhiêu số chẵn.
+            </h3>
+            <p>Nhập 3 số nguyên</p>
+            <div class="form-group row mt-3">
+                <div class="col-4">
+                    <input class="form-control" id="soNThu1" placeholder="Số thứ nhất">
+                </div>
+
+                <div class="col-4">
+                    <input class="form-control" id="soNThu2" placeholder="Số thứ hai">
+                </div>
+
+                <div class="col-4">
+                    <input class="form-control" id="soNThu3" placeholder="Số thứ ba">
+                </div>
+            </div>
+            <div class="form-group mt-2">
+                <button id="demChanLe" class="btn btn-danger">Đếm chẵn lẻ</button>
+            </div>
+            <div class="alert alert-danger mt-2" id="ketQuaChanLe"></div>
+        </section>
+        <hr>
+        <section class="bai4 my-5">
+            <h3>Bài tập 4: Viết chương trình cho nhập 3 cạnh của tam giác. Hãy cho biết đó là tam giác gì?</h3>
+            <p>Nhập độ dài 3 cạnh của tam giác</p>
+            <div class="form-group row mt-3">
+                <div class="col-4">
+                    <input class="form-control" id="canh1" placeholder="Cạnh thứ nhất">
+                </div>
+
+                <div class="col-4">
+                    <input class="form-control" id="canh2" placeholder="Cạnh thứ hai">
+                </div>
+
+                <div class="col-4">
+                    <input class="form-control" id="canh3" placeholder="Cạnh thứ ba">
+                </div>
+            </div>
+            <div class="form-group mt-2">
+                <button id="duDoan" class="btn btn-success">Dự đoán</button>
+            </div>
+            <div class="alert alert-success mt-2" id="tamGiac"></div>
+        </section>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
