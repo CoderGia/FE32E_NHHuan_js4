@@ -95,14 +95,19 @@ document.getElementById('duDoan').onclick = function () {
     //output dự đoán kết quả tam giác vuông, cân, đều và thường
     var duDoan = '';
     //process 
-    if (canh1 === canh2 || canh1 === canh3 || canh2 === canh3) {
+    if (canh1 === canh2) {
+        if(canh2 === canh3) {
+            duDoan = "Đây là tam giác đều";
+        } else {
+            duDoan = "Đây là tam giác cân";
+        }
+    } else if (canh2 === canh3 || canh1 === canh3) {
         duDoan = "Đây là tam giác cân";
-    } else if (canh1 === canh2 & canh1 === canh3) {
-        duDoan = "Đây là tam giác đều";
-    } else if (canh1 * canh1 + canh2 * canh2 === canh3 * canh3 || canh1 * canh1 + canh3 * canh3 === canh2 * canh2 || canh2 * canh2 + canh3 * canh3 === canh1 * canh1) {
-        duDoan = "Đây là tam giác vuông";
     } else {
         duDoan = "Đây là tam giác thường";
+    }
+    if (canh1 * canh1 + canh2 * canh2 === canh3 * canh3 || canh1 * canh1 + canh3 * canh3 === canh2 * canh2 || canh2 * canh2 + canh3 * canh3 === canh1 * canh1) {
+        duDoan = "Đây là tam giác vuông";
     }
     // in ra kết quả dự đoán
     document.getElementById('tamGiac').innerHTML = duDoan;
