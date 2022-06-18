@@ -227,6 +227,9 @@ document.getElementById('docSo').onclick = function () {
         }
     }
     ketQua3 = docHangTram + ' ' + docHangChuc + ' ' + docHangDonVi;
+    if (hangChuc === 0 & hanDonVi === 0) {
+        ketQua3 = docHangTram;
+    }
     //Xuất kết quả
     document.getElementById('ketQua3').innerHTML = ketQua3;
 }
