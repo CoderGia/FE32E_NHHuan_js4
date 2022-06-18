@@ -146,6 +146,10 @@ document.getElementById('docSo').onclick = function () {
     }
 
     switch (hangChuc) {
+        case 0: {
+            docHangChuc = 'lẻ';
+            break;
+        }
         case 1: {
             docHangChuc = 'mười';
             break;
