@@ -96,6 +96,7 @@ document.getElementById('tinhNgay').onclick = function () {
 document.getElementById('docSo').onclick = function () {
     //input
     var so = Number(document.getElementById('so').value);
+    // output
     var ketQua3 = '';
     //tiên trình: tách số có 3 chữ số
     var hangTram = Math.floor(so / 100);
